@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Documentation of the Digraph3 resources &#8212; Digraph3 3.7-3200+ documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials of the Digraph3 resources" href="tutorial.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorials of the Digraph3 resources"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Digraph3 3.7-3200+ documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="documentation-of-the-digraph3-resources">
+<h1>Documentation of the Digraph3 resources<a class="headerlink" href="#documentation-of-the-digraph3-resources" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Raymond Bisdorff, Emeritus Professor, University of Luxembourg</p>
+</dd>
+<dt class="field-even">Version</dt>
+<dd class="field-even"><p>Revision: Python 3.7</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p><a class="reference external" href="author.html">R. Bisdorff</a> Copyright 2013-2020</p>
+</dd>
+</dl>
+<div class="section" id="contents">
+<span id="documents"></span><h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="tutorial.html">Tutorials</a></p></li>
+<li><p><a class="reference external" href="techDoc.html">Reference manual</a></p></li>
+<li><p><a class="reference external" href="pearls.html">Pearls of bipolar-valued epistemic logic</a></p></li>
+<li><p><a class="reference external" href="digraph3Archives.html">Archives</a></p></li>
+<li><p><a class="reference external" href="author.html">About the author</a></p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<div class="section" id="introduction">
+<span id="introduction-label"></span><h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>This documentation, also available on the <a class="reference external" href="https://readthedocs.org/">Read The Docs</a> site: <a href="https://digraph3.readthedocs.io/en/latest/" target="_blank">https://digraph3.readthedocs.io/en/latest/</a>, describes the Python3 resources for implementing decision aid algorithms in the context of a <em>bipolar-valued outranking</em> approach (<a class="footnote-reference brackets" href="#id4" id="id1">1</a>, <a class="footnote-reference brackets" href="#id5" id="id2">2</a>). These computing resources are useful in the field of <a class="reference external" href="https://www.lamsade.dauphine.fr/~projet_cost/ALGORITHMIC_DECISION_THEORY/ALGORITHMIC_DECISION_THEORY.html">Algorithmic Decision Theory</a> and more specifically in <strong>outranking</strong> based <em>Multiple Criteria Decision Aid</em> (MCDA). They provide the practical tools for a Master Course <a href="http://hdl.handle.net/10993/37933" target="_blank">on Algorithmic Decision Theory</a> at the University of Luxembourg.</p>
+<a class="reference internal image-reference" href="_images/introDoc2.png"><img alt="_images/introDoc2.png" class="align-center" src="_images/introDoc2.png" style="width: 500pt;" /></a>
+<p><strong>Parts of the documentation:</strong></p>
+<p>The documentation contains, first, a set of tutorials introducing the
+main objects like digraphs, outranking digraphs and performance
+tableaux. There is also a tutorial provided on undirected graphs. Some
+tutorials are problem oriented and show how to compute the winner of
+an election, how to build a best choice recommendation, or how to
+linearly rank or rate with multiple incommensurable performance
+criteria. Other tutorials concern more specifically operational
+aspects of computing maximal independent sets (MISs) and kernels in
+graphs and digraphs. The tutorial about split, interval and permutation graphs is inspired by Martin Golumbic’s book on <em>Algorithmic Graph Theory and Perfect Graphs</em> (<a class="footnote-reference brackets" href="#id6" id="id3">3</a>). We also provide a tutorial on
+tree graphs and spanning forests.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorials of the Digraph3 resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#working-with-the-digraph3-software-resources">Working with the <em>Digraph3</em> software resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#downloading-of-the-digraph3-resources">Downloading of the Digraph3 resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#starting-a-python3-session">Starting a Python3 session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#digraph-object-structure"><code class="docutils literal notranslate"><span class="pre">Digraph</span></code> object structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#permanent-storage">Permanent storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#inspecting-a-digraph-object">Inspecting a <code class="docutils literal notranslate"><span class="pre">Digraph</span></code> object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#special-classes">Special classes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#manipulating-digraph-objects">Manipulating <code class="docutils literal notranslate"><span class="pre">Digraph</span></code> objects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#random-digraph">Random digraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#graphviz-drawings">Graphviz drawings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#asymmetric-and-symmetric-parts">Asymmetric and symmetric parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#border-and-inner-parts">Border and inner parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#fusion-by-epistemic-disjunction">Fusion by epistemic disjunction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#dual-converse-and-codual-digraphs">Dual, converse and codual digraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#symmetric-and-transitive-closures">Symmetric and transitive closures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#strong-components">Strong components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#csv-storage">CSV storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#complete-empty-and-indeterminate-digraphs">Complete, empty and indeterminate digraphs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#computing-the-winner-of-an-election">Computing the winner of an election</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#linear-voting-profiles">Linear voting profiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-the-winner">Computing the winner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-condorcet-winner">The Condorcet winner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#cyclic-social-preferences">Cyclic social preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#on-generating-random-linear-voting-profiles">On generating random linear voting profiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#working-with-the-outrankingdigraphs-module">Working with the <code class="docutils literal notranslate"><span class="pre">outrankingDigraphs</span></code> module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#outranking-digraph">Outranking digraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#browsing-the-performances">Browsing the performances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#valuation-semantics">Valuation semantics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#pairwise-comparisons">Pairwise comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#recoding-the-valuation">Recoding the valuation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-strict-outranking-digraph">The strict outranking digraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#xmcda-2-0">XMCDA 2.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#generating-random-performance-tableaux">Generating random performance tableaux</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-standard-random-performance-tableaux">Generating standard random performance tableaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-random-cost-benefit-performance-tableaux">Generating random Cost-Benefit performance tableaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-random-three-objectives-performance-tableaux">Generating random three objectives performance tableaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-random-linearly-ranked-performance-tableaux">Generating random linearly ranked performance tableaux</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#ranking-with-multiple-incommensurable-criteria">Ranking with multiple incommensurable criteria</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-ranking-problem">The ranking problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-copeland-ranking">The <em>Copeland</em> ranking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-netflows-ranking">The <em>NetFlows</em> ranking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#kemeny-rankings"><em>Kemeny</em> rankings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#slater-rankings"><em>Slater</em> rankings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#kohler-s-ranking-by-choosing-rule"><em>Kohler</em>’s ranking-by-choosing rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#tideman-s-ranked-pairs-rule"><em>Tideman</em>’s ranked-pairs rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#ranking-big-performance-tableaux">Ranking big performance tableaux</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#hpc-ranking-with-big-outranking-digraphs">HPC ranking with big outranking digraphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#c-compiled-python-modules">C-compiled Python modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#big-data-performance-tableaux">Big Data performance tableaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#c-implemented-integer-valued-outranking-digraphs">C-implemented integer-valued outranking digraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#the-sparse-outranking-digraph-implementation">The sparse outranking digraph implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#ranking-big-sets-of-decision-alternatives">Ranking big sets of decision alternatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#hpc-quantiles-ranking-records">HPC quantiles ranking records</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#computing-a-best-choice-recommendation">Computing a best choice recommendation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#what-site-to-choose">What site to choose ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#performance-tableau">Performance tableau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#id48">Outranking digraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#rubis-best-choice-recommendations"><em>Rubis</em> best choice recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-strict-best-choice-recommendations">Computing <em>strict best</em> choice recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#weakly-ordering-the-outranking-digraph">Weakly ordering the outranking digraph</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#rating-with-learned-quantile-norms">Rating with learned quantile norms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#id59">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#incremental-learning-of-historical-performance-quantiles">Incremental learning of historical performance quantiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#rating-new-performances-with-quantile-norms">Rating new performances with quantile norms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#working-with-the-graphs-module">Working with the <code class="code docutils literal notranslate"><span class="pre">graphs</span></code> module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#structure-of-a-graph-object">Structure of a <code class="docutils literal notranslate"><span class="pre">Graph</span></code> object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#q-coloring-of-a-graph">q-coloring of a graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#mis-and-clique-enumeration">MIS and clique enumeration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#line-graphs-and-maximal-matchings">Line graphs and maximal matchings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#grids-and-the-ising-model">Grids and the Ising model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#simulating-metropolis-random-walks">Simulating Metropolis random walks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#computing-the-non-isomorphic-miss-of-the-12-cycle-graph">Computing the non isomorphic MISs of the 12-cycle graph</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#id69">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-the-maximal-independent-sets-miss">Computing the maximal independent sets (MISs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-the-automorphism-group">Computing the automorphism group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-the-isomorphic-miss">Computing the isomorphic MISs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#on-computing-digraph-kernels">On computing digraph kernels</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#what-is-a-graph-kernel">What is a graph kernel ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#initial-and-terminal-kernels">Initial and terminal kernels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#kernels-in-lateralized-digraphs">Kernels in lateralized digraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#computing-good-and-bad-choice-recommendations">Computing good and bad choice recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#tractability">Tractability</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#about-split-interval-and-permutation-graphs">About split, interval and permutation graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#a-multiply-perfect-graph">A multiply <em>perfect</em> graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#who-is-the-liar">Who is the liar ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-permutation-graphs">Generating permutation graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#recognizing-permutation-graphs">Recognizing permutation graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#on-tree-graphs-and-graph-forests">On tree graphs and graph forests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#generating-random-tree-graphs">Generating random tree graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#recognizing-tree-graphs">Recognizing tree graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#spanning-trees-and-forests">Spanning trees and forests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#maximum-determined-spanning-forests">Maximum determined spanning forests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#bibliography">Bibliography</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#documents">Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#footnotes">Footnotes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html#appendices">Appendices</a></li>
+</ul>
+</div>
+<p>The second section concerns the extensive reference manual of the collection of provided Python3 modules, classes and methods. The main classes in this collection are the <a class="reference internal" href="techDoc.html#digraphs.Digraph" title="digraphs.Digraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">digraphs.Digraph</span></code></a> overall root class, the <a class="reference internal" href="techDoc.html#perfTabs.PerformanceTableau" title="perfTabs.PerformanceTableau"><code class="xref py py-class docutils literal notranslate"><span class="pre">perfTabs.PerformanceTableau</span></code></a> class and the <a class="reference internal" href="techDoc.html#outrankingDigraphs.BipolarOutrankingDigraph" title="outrankingDigraphs.BipolarOutrankingDigraph"><code class="xref py py-class docutils literal notranslate"><span class="pre">outrankingDigraphs.BipolarOutrankingDigraph</span></code></a> class. The technical documentation also provides insight into the complete source code of all modules, classes and methods.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="techDoc.html">Technical Reference of the Digraph3 modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#organisation-of-the-digraph3-modules">Organisation of the Digraph3 modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#digraphs-module">digraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-randomDigraphs">randomDigraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#graphs-module">graphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-perfTabs">perfTabs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-performanceQuantiles">performanceQuantiles module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#randomperftabs-module">randomPerfTabs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#outrankingdigraphs-module">outrankingDigraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-xmcda">xmcda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-sparseOutrankingDigraphs">sparseOutrankingDigraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#sortingdigraphs-module">sortingDigraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#votingprofiles-module">votingProfiles module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#linearorders-module">linearOrders module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-transitiveDigraphs">transitiveDigraphs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-randomNumbers">randomNumbers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-digraphsTools">digraphsTools module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#module-arithmetics">arithmetics module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#cythonized-modules-for-big-digraphs">Cythonized modules for big digraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="techDoc.html#tutorials">Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The third section exhibits some <em>pearls of bipolar epistemic logic</em>. These short texts illustrate well the very computational benefit one may get when working in a bipolar-valued logical framework. And, more specifically, the essential part the logically neutral <em>undeterminate</em> value is judiciously playing therein.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pearls.html">Pearls of bipolar-valued epistemic logic</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#coping-with-missing-data-and-indeterminateness">Coping with missing data and indeterminateness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#ordinal-correlation-equals-bipolar-valued-relational-equivalence">Ordinal correlation equals bipolar-valued relational equivalence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#bipolar-valued-kernel-membership-characteristic-vectors">Bipolar-valued kernel membership characteristic vectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#on-confident-outrankings-with-uncertain-criteria-significances">On confident outrankings with uncertain criteria significances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#robustness-analysis-of-bipolar-valued-outranking-digraphs">Robustness analysis of bipolar-valued outranking digraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pearls.html#bibliography">Bibliography</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The fourth section gathers historical case studies and example digraphs compiled before 2006 and concerning the active development of the Digraph3 collection of python3 modules for implementing tools and methods of the <em>Rubis decision aiding</em> approach.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="digraph3Archives.html">Digraph3 Archives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="digraph3Archives.html#introduction">Introduction</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>And, a last section</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="author.html">About the author</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="author.html#short-cv">Short CV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="author.html#publications">Publications</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><ol class="upperalpha simple" start="18">
+<li><p>Bisdorff, L.C. Dias, P. Meyer, V. Mousseau and M. Pirlot (Eds.) (2015). <em>Evaluation and decision models with multiple criteria: Case studies</em>. Springer-Verlag Berlin Heidelberg, International Handbooks on Information Systems, <a class="reference external" href="https://link.springer.com/book/10.1007/978-3-662-46816-6">ISBN 978-3-662-46815-9</a>, 643 pages (see <a class="reference external" href="http://hdl.handle.net/10993/23698">http://hdl.handle.net/10993/23698</a>).</p></li>
+</ol>
+</dd>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><ol class="upperalpha simple" start="18">
+<li><p>Bisdorff (2000). “Logical foundation of fuzzy preferential systems with application to the Electre decision aid methods”, <em>Computers and Operations Research</em>, 27: 673-687 (downloadable <a class="reference external" href="http://hdl.handle.net/10993/23724">PDF file 159.1kB</a>)</p></li>
+</ol>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><ol class="upperalpha simple" start="13">
+<li><p>Ch. Golumbic (2004), <em>Agorithmic Graph Theory and Perfect Graphs</em> 2nd Ed., Annals of Discrete Mathematics 57, Elsevier.</p></li>
+</ol>
+</dd>
+</dl>
+<p><a href="_static/digraph3_copyright.html" target="_blank">Copyright</a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Documentation of the Digraph3 resources</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tutorial.html"
+                        title="next chapter">Tutorials of the Digraph3 resources</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="tutorial.html" title="Tutorials of the Digraph3 resources"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Digraph3 3.7-3200+ documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2012-2020, Raymond Bisdorff.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.0.
+    </div>
+  </body>
+</html>

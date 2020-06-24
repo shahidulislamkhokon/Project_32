@@ -1,0 +1,59 @@
+
+MICS ADT 2020 homework project description
+
+*Data files*
+
+historicalData_x.py : contains a 3 Objectives performance tableau with 2000 historical records.
+perfTab_x.py   : contains a performance tableau of the same kind with 100 new records.
+
+*Quewstions*
+
+1) Illustrate the content of the given perfTab_x.py performance tableau 
+by best showing objectives, criteria, decision actions and performance table. 
+If needed, write adequate python code.
+
+2) Construct the corresponding bipolar-valued outranking digraph
+and enumerate its chordless circuits. How are such circuits,
+the case given, influencing the algorithmic decision aid tools?
+
+3) What are apparently the 5 best-ranked decision alternatives in your 
+decision problem from the different decision objectives point of views 
+and from a global fair compromise view?
+Justify your ranking approach from a methodological point of view.
+
+4) How would you rate your 100 public policies into relative deciles classes ?
+
+5) Using the given historical records in historicalData_x.py, how would you
+rate your 100 public policies into absolute deciles classes ?
+Explain the differencea you may observe between the absolute and 
+the previous relative rating result.  
+
+6) Select among your 100 potential policies a shortlist of up to 
+15 potential best policies,  all reaching an absolute performance 
+quantile of at least 66.67%.
+
+7) Based on the previous best policies shortlist (see Question 6), what are your
+best-choice recommendations from the different objectives point of views and 
+from a global multi-objectives compromise point of view ? 
+
+8) Explain with methodological arguments the differences, the case given,
+between your best choice recommendations (see question 7)
+and your 5-best-ranked results obtained in the beginning (see question 3).
+
+*Work to do*
+
+1) Present your results, supported both by computational Python code using the
+Digraph3 resources as well as by methodological and algorithmic arguments from the
+Algorithmic Decision Theory course, in a text file (PDF or Open Document format).
+You should update regularly your git clone: (...$ git pull)  or
+svn working directory: (...$ svn update).
+
+2) Upload a zip archive with your problem data, any relevant source code and
+all result files (report and graphics), including the slides for the
+oral presentation (see item 3 below). Submissions are due for
+Wednesday, 1st of July 2020 at 23:55 (see assignment on the moodle page).
+
+3) For Thursady July 2nd and July 3rd, a concise oral presentation in
+individual webex session of about 10 minutes (a few slides only) is asked for
+in order to defend your homework results and methodological approach.
+The precise schedule of these webex sessions will be communicated in due time.
